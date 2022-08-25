@@ -1,0 +1,306 @@
+/* @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(font/Montserrat-Bold.ttf);
+} */
+body{
+    margin: 0;
+    overflow-y: scroll;
+}
+.topsection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 50px 0px;
+    background-color: #000E22;
+}
+.topsection::before{
+    position: absolute;
+    content: "";
+    top: 90px;
+    left: 0;
+    width: 150px;
+    height: 426px;
+    background-image: url(../img/frame.png);
+}
+.topsection::after {
+    position: absolute;
+    content: "";
+    top: 200px;
+    right: 0;
+    width: 150px;
+    height: 426px;
+    transform: rotate(180deg);
+    background-image: url(../img/frame.png);
+}
+.topsection .datasection {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px 15px;
+    background-color: #000E22;
+    z-index: 1;
+}
+.topsection .datasection .head{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.topsection .datasection .head .title{
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+}
+.topsection .datasection .head .title h2 {
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+.topsection .datasection .head .link-button{
+    width: 100%;
+    padding: 0px;
+    text-align: end;
+}
+.topsection .datasection .head .link-button a {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid;
+    padding-bottom: 2px;
+}
+.topsection .datasection .head .link-button a:hover{
+    color: #FFBE0C;
+    transition: 0.3s;
+}
+.topsection .content{
+    width: 100%;
+}
+.topsection .content .video {
+    background-image: url(../img/lifestyle.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 10px 0px 0px 10px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.topsection .content .video::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 44.79%, rgba(0, 0, 0, 0.35) 63.54%, #000000 100%);
+    transition: all 0.4s ease;
+}
+.topsection .content .video>a{
+    text-decoration: none;
+    line-height: 80px;
+    color: #fff;
+}
+.topsection .content .video>a>.icon {
+    position: relative;
+    top: 38%;
+    left: 44%;
+    background: #FFBE0C;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.topsection .content .video .text {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+.topsection .content .video .text>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    padding: 5px 10px;
+    background-color: #1298fc;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+.topsection .content .video .text h2 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.topsection .content .video .text h2>a{
+    text-decoration: none;
+    color: #fff;
+}
+.topsection .content .video:hover .text h2>a{
+    border-bottom: 2px solid;
+    color: #FFBE0C;
+    transition: 1s;
+}
+.topsection .content .video-list {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+    background-color: #182B49;
+    padding: 20px 15px;
+}
+.topsection .content .video-list .nav {
+    margin: 15px 0px 0px 1px;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.topsection .content .video-list .nav .nav-link {
+    border-bottom: 0.1px solid #dddddd73;
+    list-style: none;
+    line-height: 24px;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 15px;
+}
+.topsection .content .video-list .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #dd163b;
+    border: 0;
+    border-radius: 5px;
+}
+.topsection .content .video-list .nav .nav-link .media{
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.topsection .content .video-list .nav .nav-link .media .thumbline{
+    position: relative;
+    background-image: url(../img/lifestyle.jpg);
+    width: 30%;
+    height: 100px;
+    border-radius: 14px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid #8392A5;
+    overflow: hidden;
+}
+.topsection .content .video-list .nav .nav-link .media .thumbline i {
+    position: relative;
+    top: 35%;
+    left: 34%;
+    width: 30px;
+    height: 30px;
+    background: #ffbe0c;
+    border-radius: 50%;
+    line-height: 31px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+.topsection .content .video-list .nav .nav-link .media .thumbline .fa-play:before {
+    content: "\f04b";
+    margin-left: 3px;
+}
+.topsection .content .video-list .nav .nav-link .media .details {
+    padding-left: 15px;
+    color: #fff;
+    width: 70%;
+}
+/* .topsection .content .video-list .nav .nav-link:hover .media .details h4{
+    color: #FFBE0C;
+    transition: 1s;
+} */
+.topsection .content .video-list .nav .nav-link .media .details h4{
+    font-family: Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.topsection .content .video-list .nav .nav-link .media .details p{
+    font-family: Sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.topsection .content .video-list .nav .nav-link .media .second{
+    background-image: url(../img/joy-girl-770x470.jpg);
+}
+.topsection .content .video-list .nav .nav-link .media .third{
+    background-image: url(../img/lady-770x470.jpg);
+}
+.nav-tabs .nav-link {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: unset;
+}
+.nav-tabs {
+    border: 0;
+}
+.topsection .content .tab-content .two{
+    background-image: url(../img/joy-girl-770x470.jpg);
+}
+.topsection .content .tab-content .three{
+    background-image: url(../img/lady-770x470.jpg);
+}
+
+.bs-example .modal{
+    overflow: hidden;
+}
+.bs-example .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    pointer-events: auto;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+}
+.bs-example .modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: end;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+.bs-example .modal-body {
+    position: relative;
+    padding: 0;
+}
+.bs-example .modal-body  iframe {
+    border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 992px) {
+    .topsection .content .video-list{
+        margin-top: 20px;
+    }
+
+}
